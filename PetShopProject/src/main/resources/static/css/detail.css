@@ -1,0 +1,54 @@
+
+.detail-h5 h5{
+    color: #818181;
+    font-size:35px;
+}
+.button-detail {
+    color: crimson;
+    background-color: crimson;
+    top: -70px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 422px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity .35s ease;
+    width: 100%;
+
+}
+.btn-detail {
+    border-top:1px solid crimson;
+    border-bottom:1px solid crimson;
+    border-left:1px solid;
+    border-right:1px solid;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-detail span {
+    z-index: 20;
+}
+
+.btn-detail:after {
+    background: crimson;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 1;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+}
+
+.btn-detail:hover:after {
+    background: white;
+    left: 120%;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
